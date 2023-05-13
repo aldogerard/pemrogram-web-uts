@@ -1,0 +1,164 @@
+@media (max-width: 768px) {
+
+
+  /* --------- Navigation Bar Start --------- */
+
+
+  nav .navbar-title {
+    z-index: 99;
+  }
+
+  nav .navbar-list {
+    background-color: var(--dark);
+    font-size: larger;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -9;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+  }
+
+
+  nav .slide {
+    backdrop-filter: blur(20);
+    opacity: 1;
+    transform: translateX(15%);
+    -webkit-transform: translateX(15%);
+    -moz-transform: translateX(15%);
+    -ms-transform: translateX(15%);
+    -o-transform: translateX(15%);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* --------- Navigation Bar End --------- */
+
+
+
+  /* ---------  Home Section Start ---------*/
+
+
+  section .home-container {
+    align-items: start;
+  }
+
+  section .home-container h3 {
+    font-size: 1.2rem;
+  }
+
+  section .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  section .home-container p {
+    text-align: left;
+  }
+
+  section .home-container a {
+    margin: 2rem auto;
+  }
+
+  /* ---------  Home Section End ---------*/
+
+  /* ---------  About Section Start ---------*/
+  section .about-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  section .about-container .about-container-left {
+    width: 100%;
+  }
+
+  section .about-container .about-container-left h4 {
+    font-size: 1.4rem;
+  }
+
+  section .about-container .about-container-left h5 {
+    font-size: 1.2rem;
+  }
+
+  section .about-container .about-container-left p {
+    font-size: .8rem;
+  }
+
+  section .about-container .about-container-left a {
+    width: max-content;
+  }
+
+  section .about-container .about-container-right {
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  section .about-container .about-container-right .img-container-1 {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 2rem;
+  }
+
+
+  section .about-container .about-container-right .img-container-2 {
+    width: 10rem;
+    height: 10rem;
+    bottom: 0;
+    left: 3rem;
+  }
+
+  /* ---------  About Section End ---------*/
+
+
+  /* ---------  Choose Section Start ---------*/
+  section .choose-container h4 {
+    font-size: 1.5rem;
+  }
+
+  section .choose-container p {
+    font-size: .8rem;
+  }
+
+  section .choose-container .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section .choose-container .cards-wrapper .card-container {
+    width: 45%;
+  }
+
+  section .choose-container .cards-wrapper .card-container .card-img {
+    width: 10rem;
+  }
+
+
+  section .choose-container .cards-wrapper .card-container h6 {
+    font-size: .8rem;
+  }
+
+  section .choose-container .cards-wrapper .card-container p {
+    font-size: .5rem;
+  }
+
+
+
+  /* ---------  Choose Section End ---------*/
+
+}
