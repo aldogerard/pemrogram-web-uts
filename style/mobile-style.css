@@ -135,30 +135,65 @@
     font-size: .8rem;
   }
 
-  section .choose-container .cards-wrapper {
+  section .choose-container .choose-cards-wrapper {
     display: flex;
     flex-direction: row;
   }
 
-  section .choose-container .cards-wrapper .card-container {
+  section .choose-container .choose-cards-wrapper .card-container {
     width: 45%;
   }
 
-  section .choose-container .cards-wrapper .card-container .card-img {
+  section .choose-container .choose-cards-wrapper .card-container .card-img {
     width: 10rem;
   }
 
 
-  section .choose-container .cards-wrapper .card-container h6 {
+  section .choose-container .choose-cards-wrapper .card-container h6 {
     font-size: .7rem;
   }
 
-  section .choose-container .cards-wrapper .card-container p {
+  section .choose-container .choose-cards-wrapper .card-container p {
     font-size: .5rem;
   }
 
-
-
   /* ---------  Choose Section End ---------*/
+
+
+
+  /* ---------  Services Section Start ---------*/
+
+
+  section .services-container h4 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+  }
+
+  section .services-container p {
+    font-size: .8rem;
+  }
+
+  section .services-container .services-cards-wrapper {
+    flex-direction: column;
+  }
+
+  section .services-container .services-cards-wrapper .card-container {
+    width: 100%;
+  }
+
+  section .services-container .services-cards-wrapper .card-container .card-img {
+    width: 100%;
+  }
+
+  section .services-container .services-cards-wrapper .card-container .card-img img {
+    height: 100%;
+  }
+
+  section .services-container .services-cards-wrapper .card-container .card-container-desc h6 {
+    font-size: 1.2rem;
+  }
+
+  /* ---------  Services Section End ---------*/
 
 }

@@ -351,7 +351,7 @@ section .about-container .about-container-right .about-img-2:hover {
 /* ---------  Choose Section Start ---------*/
 section.choose-section {
   width: 100%;
-  background-color: #140900;
+  background-color: #110800;
 }
 
 section .choose-container {
@@ -377,7 +377,7 @@ section .choose-container p {
   max-width: var(--max-lg);
 }
 
-section .choose-container .cards-wrapper {
+section .choose-container .choose-cards-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -386,14 +386,14 @@ section .choose-container .cards-wrapper {
   gap: 1rem;
 }
 
-section .choose-container .cards-wrapper .card-container {
+section .choose-container .choose-cards-wrapper .card-container {
   width: 23%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section .choose-container .cards-wrapper .card-container .card-img {
+section .choose-container .choose-cards-wrapper .card-container .card-img {
   width: 10rem;
   height: 8rem;
   display: flex;
@@ -401,28 +401,134 @@ section .choose-container .cards-wrapper .card-container .card-img {
   align-items: center;
 }
 
-section .choose-container .cards-wrapper .card-container .card-img img {
+section .choose-container .choose-cards-wrapper .card-container .card-img img {
   object-fit: contain;
   object-position: center;
   width: 40%;
 }
 
-section .choose-container .cards-wrapper .card-container h6 {
+section .choose-container .choose-cards-wrapper .card-container h6 {
   text-align: center;
   font-size: 1rem;
   color: var(--white);
   margin-bottom: .5rem;
 }
 
-section .choose-container .cards-wrapper .card-container p {
+section .choose-container .choose-cards-wrapper .card-container p {
   font-size: .6rem;
   color: var(--gray);
   max-width: 12rem;
 }
 
-
-
 /* ---------  Choose Section End ---------*/
+
+
+/* ---------  Services Section Start ---------*/
+
+section.service-section {
+  width: 100%;
+  background-color: var(--dark);
+}
+
+section .services-container {
+  max-width: var(--max-xl);
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+section .services-container h4 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+section .services-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  max-width: var(--max-lg);
+}
+
+section .services-container .services-cards-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+section .services-container .services-cards-wrapper .card-container {
+  max-width: 25rem;
+  width: 30%;
+  cursor: pointer;
+  height: max-content;
+  margin-bottom: 1rem;
+  background-color: var(--dark);
+  border: 1px solid var(--primary);
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  overflow: hidden;
+}
+
+section .services-container .services-cards-wrapper .card-container:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+section .services-container .services-cards-wrapper .card-container .card-img {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+
+section .services-container .services-cards-wrapper .card-container .card-img img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+section .services-container .services-cards-wrapper .card-container .card-container-desc {
+  padding: 0 .5rem;
+}
+
+section .services-container .services-cards-wrapper .card-container .card-container-desc h6 {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+section .services-container .services-cards-wrapper .card-container .card-container-desc p {
+  text-align: left;
+  color: var(--gray);
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+section .services-container .services-cards-wrapper .card-container .card-container-desc a {
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+
+/* ---------  Services Section End ---------*/
 
 
 
@@ -442,7 +548,8 @@ section .choose-container .cards-wrapper .card-container p {
   nav .nav-container,
   section .home-container,
   section .about-container,
-  section .choose-container {
+  section .choose-container,
+  section .services-container {
     max-width: var(--max-2xl);
   }
 
@@ -515,21 +622,41 @@ section .choose-container .cards-wrapper .card-container p {
   }
 
 
-  section .choose-container .cards-wrapper .card-container .card-img {
+  section .choose-container .choose-cards-wrapper .card-container .card-img {
     width: 13rem;
     height: 10rem;
   }
 
-  section .choose-container .cards-wrapper .card-container h6 {
+  section .choose-container .choose-cards-wrapper .card-container h6 {
     font-size: 1.2rem;
   }
 
-  section .choose-container .cards-wrapper .card-container p {
+  section .choose-container .choose-cards-wrapper .card-container p {
     font-size: .8rem;
     max-width: 15rem;
   }
 
-
-
   /* ---------  Choose Section End ---------*/
+
+
+
+  /* --------- Services Section Start ---------- */
+  section .services-container h4 {
+    font-size: 2.5rem;
+  }
+
+  section .services-container p {
+    color: var(--white);
+    max-width: var(--max-xl);
+  }
+
+  section .services-container .services-cards-wrapper .card-container .card-container-desc h6 {
+    font-size: 1.2rem;
+  }
+
+  section .services-container .services-cards-wrapper .card-container .card-container-desc p {
+    font-size: .9rem;
+  }
+
+  /* --------- Services Section End ---------- */
 }
