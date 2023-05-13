@@ -408,7 +408,8 @@ section .choose-container .cards-wrapper .card-container .card-img img {
 }
 
 section .choose-container .cards-wrapper .card-container h6 {
-  font-size: .9rem;
+  text-align: center;
+  font-size: 1rem;
   color: var(--white);
   margin-bottom: .5rem;
 }
