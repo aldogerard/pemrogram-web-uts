@@ -196,4 +196,89 @@
 
   /* ---------  Services Section End ---------*/
 
+
+
+
+  /* ---------  Galery Section Start ---------*/
+
+
+  section .galery-hero .galery-container h4 {
+    font-size: 1.5rem;
+  }
+
+  section .galery-hero .galery-container p {
+    font-size: .8rem;
+  }
+
+  section .galery-hero .galery-container .galery-container-option {
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  section .galery-hero .galery-container .galery-container-option li a {
+    font-size: .8rem;
+  }
+
+  section .galery-hero .galery-container .galery-container-img {
+    height: 30rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  section .galery-hero .galery-container .galery-container-img .galery-container-img1 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+
+  section .galery-hero .galery-container .galery-container-img .galery-container-img2 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  section .galery-hero .galery-container .galery-container-img .galery-container-img4 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  section .galery-hero .galery-container .galery-container-img .galery-container-img3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  section .galery-hero .galery-container .galery-container-img .galery-container-img5 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  /* ---------  Galery Section End ---------*/
+
+
+
+  /* ------------ Reviews Section Start ------------ */
+  section .review-hero .review-container h4 {
+    font-size: 1.5rem;
+  }
+
+  section .review-hero .review-container p {
+    font-size: .8rem;
+  }
+
+  section .review-hero .review-container .review-cards-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section .review-hero .review-container .review-cards-wrapper .review-cards-container {
+    width: 85%;
+  }
+
+
+
+  section .review-hero .review-container .review-cards-wrapper .review-cards-container .card-person {
+    height: 4rem;
+    width: 4rem;
+  }
+
+
+  section .review-hero .review-container .review-cards-wrapper .review-cards-container h4 {
+    font-size: 1rem;
+  }
+
+  /* ------------ Reviews Section End ------------ */
 }
