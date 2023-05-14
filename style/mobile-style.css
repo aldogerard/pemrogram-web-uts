@@ -212,12 +212,12 @@
   }
 
   section .galery-hero .galery-container .galery-container-option {
-    gap: 1.5rem;
+    gap: 1.2rem;
     justify-content: space-between;
   }
 
   section .galery-hero .galery-container .galery-container-option li a {
-    font-size: .6rem;
+    font-size: .7rem;
   }
 
   section .galery-hero .galery-container .galery-container-img {
@@ -337,4 +337,25 @@
   }
 
   /* ------------ Contact Section End ------------ */
+
+
+
+
+  /* ------------ Footer Section Start ------------ */
+
+  footer .footer-container .footer-container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  footer .footer-container .footer-container-top .footer-container-1,
+  footer .footer-container .footer-container-top .footer-container-2,
+  footer .footer-container .footer-container-top .footer-container-3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* ------------ Footer Section End ------------ */
 }

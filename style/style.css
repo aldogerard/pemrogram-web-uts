@@ -945,6 +945,167 @@ section .contact-container form .contact-container-form .contact-form-btn button
 
 
 
+/* ------------ Footer Section Start ------------ */
+
+footer.footer-section {
+  width: 100%;
+  background-color: #110800;
+}
+
+footer .footer-container {
+  height: 100%;
+  max-width: var(--max-xl);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  padding: 3rem 1rem 2rem;
+  justify-content: space-between;
+}
+
+footer .footer-container .footer-container-top {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .footer-container .footer-container-top .footer-container-1,
+footer .footer-container .footer-container-top .footer-container-2,
+footer .footer-container .footer-container-top .footer-container-3 {
+  width: 32%;
+  flex-direction: column;
+}
+
+footer .footer-container .footer-container-top .footer-container-1 h4,
+footer .footer-container .footer-container-top .footer-container-2 h4,
+footer .footer-container .footer-container-top .footer-container-3 h4 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-container .footer-container-top .footer-container-1 p {
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+footer .footer-container .footer-container-top .footer-container-1 h6 {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+
+footer .footer-container .footer-container-top .footer-container-2 ul,
+footer .footer-container .footer-container-top .footer-container-3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .footer-container .footer-container-top .footer-container-2 ul li a {
+  color: var(--white);
+  font-size: 1rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+footer .footer-container .footer-container-top .footer-container-2 ul li a:hover {
+  color: var(--primary);
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  gap: 1rem;
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li .footer-container-3-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li .icon1 {
+  background-image: url("../assets/location.png");
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li .icon2 {
+  background-image: url("../assets/mail.png");
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li .icon3 {
+  background-image: url("../assets/telephone.png");
+}
+
+footer .footer-container .footer-container-top .footer-container-3 ul li p {
+  color: var(--white);
+  font-size: .9rem;
+}
+
+footer .footer-container .footer-container-bottom {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--primary);
+}
+
+footer .footer-container .footer-container-bottom .footer-container-bottom-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+footer .footer-container .footer-container-bottom .footer-container-bottom-icon a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .footer-container .footer-container-bottom p {
+  color: var(--white);
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
+footer .footer-container .footer-container-bottom p a {
+  color: var(--primary);
+}
+
+
+
+/* ------------ Footer Section End ------------ */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -974,7 +1135,8 @@ section .contact-container form .contact-container-form .contact-form-btn button
   section .galery-hero .galery-container,
   section .review-hero .review-container,
   section.client-container,
-  section .contact-container {
+  section .contact-container,
+  footer .footer-container {
     max-width: var(--max-2xl);
   }
 
