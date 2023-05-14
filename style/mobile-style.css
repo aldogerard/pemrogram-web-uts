@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 924px) {
 
 
   /* --------- Navigation Bar Start --------- */
@@ -88,6 +88,7 @@
   }
 
   section .about-container .about-container-left h4 {
+    margin-top: 1rem;
     font-size: 1.4rem;
   }
 
@@ -107,6 +108,7 @@
     justify-content: flex-end;
     width: 100%;
     padding-bottom: 2rem;
+    max-width: 25rem;
   }
 
   section .about-container .about-container-right .img-container-1 {
@@ -119,8 +121,6 @@
   section .about-container .about-container-right .img-container-2 {
     width: 10rem;
     height: 10rem;
-    bottom: 0;
-    left: 3rem;
   }
 
   /* ---------  About Section End ---------*/
@@ -138,6 +138,7 @@
   section .choose-container .choose-cards-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   section .choose-container .choose-cards-wrapper .card-container {
@@ -249,6 +250,25 @@
 
 
 
+
+  /* ---------  Client Section Start ---------*/
+
+  section .client-container {
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+
+  section .client-container a img {
+    width: 11rem;
+  }
+
+  /* ---------  Client Section End ---------*/
+
+
+
+
+
   /* ------------ Reviews Section Start ------------ */
   section .review-hero .review-container h4 {
     font-size: 1.5rem;
@@ -259,16 +279,8 @@
   }
 
   section .review-hero .review-container .review-cards-wrapper {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
-
-  section .review-hero .review-container .review-cards-wrapper .review-cards-container {
-    width: 85%;
-  }
-
-
 
   section .review-hero .review-container .review-cards-wrapper .review-cards-container .card-person {
     height: 4rem;
@@ -281,4 +293,48 @@
   }
 
   /* ------------ Reviews Section End ------------ */
+
+
+
+
+  /* ------------ Contact Section Start ------------ */
+
+
+  section .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  section .contact-container .contact-container-left {
+    width: 100%;
+  }
+
+  section .contact-container .contact-container-left h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  section .contact-container .contact-container-left h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  section .contact-container form {
+    width: 100%;
+  }
+
+  section .contact-container form .contact-container-form .contact-form-name,
+  section .contact-container form .contact-container-form .contact-form-email {
+    width: 47%;
+  }
+
+  section .contact-container form .contact-container-form .contact-form-message {
+    width: 74%;
+  }
+
+  section .contact-container form .contact-container-form .contact-form-btn {
+    width: 20%;
+  }
+
+  /* ------------ Contact Section End ------------ */
 }

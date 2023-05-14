@@ -27,6 +27,7 @@
   height: 1000vh;
 } */
 
+
 /* --------- Navigation Bar Start --------- */
 nav {
   background-color: var(--dark);
@@ -312,13 +313,18 @@ section .about-container .about-container-right .img-container-2 {
   width: 11rem;
   height: 11rem;
   overflow: hidden;
-  bottom: -1rem;
-  left: 2rem;
+  bottom: 0;
+  left: 0;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  transform: translate(10%, 10%);
+  -webkit-transform: translate(10%, 10%);
+  -moz-transform: translate(10%, 10%);
+  -ms-transform: translate(10%, 10%);
+  -o-transform: translate(10%, 10%);
 }
 
 section .about-container .about-container-right .img-container-2 .about-img-2 {
@@ -641,6 +647,49 @@ section .galery-hero .galery-container .galery-container-img .galery-container-i
 
 
 
+
+/* ---------  Client Section Start ---------*/
+
+section.client-section {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+section .client-container {
+  height: 100%;
+  max-width: var(--max-xl);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+section .client-container a {
+  filter: saturate(0);
+  -webkit-filter: saturate(0);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+section .client-container a img {
+  width: 10rem;
+  object-fit: contain;
+}
+
+
+
+/* ---------  Client Section End ---------*/
+
+
+
+
+
+
 /* ------------ Reviews Section Start ------------ */
 section.review-section {
   width: 100%;
@@ -680,15 +729,16 @@ section .review-hero .review-container p {
 }
 
 section .review-hero .review-container .review-cards-wrapper {
-  padding: 3rem 0;
+  padding-top: 3rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
 
 section .review-hero .review-container .review-cards-wrapper .review-cards-container {
-  width: 30%;
+  max-width: 19rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -802,6 +852,108 @@ section .review-hero .review-container .review-cards-wrapper .review-cards-conta
 
 
 
+/* ------------ Contact Section Start ------------ */
+section.contact-section {
+  width: 100%;
+  background-color: var(--dark);
+}
+
+section .contact-container {
+  height: 100%;
+  max-width: var(--max-xl);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+section .contact-container .contact-container-left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  color: var(--white);
+}
+
+section .contact-container .contact-container-left h5 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+section .contact-container .contact-container-left h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+section .contact-container form {
+  width: 50%;
+}
+
+section .contact-container form .contact-container-form {
+  width: 100%;
+  /* background-color: #efaf20; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+section .contact-container form .contact-container-form .contact-form-name,
+section .contact-container form .contact-container-form .contact-form-email {
+  width: 48%;
+}
+
+section .contact-container form .contact-container-form .contact-form-name input,
+section .contact-container form .contact-container-form .contact-form-email input,
+section .contact-container form .contact-container-form .contact-form-message input,
+section .contact-container form .contact-container-form .contact-form-btn button {
+  width: 100%;
+  padding: .6rem 1rem;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  color: var(--dark);
+  font-weight: 500;
+}
+
+
+section .contact-container form .contact-container-form .contact-form-message {
+  width: 74%;
+}
+
+section .contact-container form .contact-container-form .contact-form-btn {
+  width: 22%;
+}
+
+section .contact-container form .contact-container-form .contact-form-btn button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary);
+  padding: .7rem 0;
+  color: var(--white);
+}
+
+/* ------------ Contact Section End ------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -819,8 +971,10 @@ section .review-hero .review-container .review-cards-wrapper .review-cards-conta
   section .about-container,
   section .choose-container,
   section .services-container,
-  section .galery-container,
-  section .review-hero .review-container {
+  section .galery-hero .galery-container,
+  section .review-hero .review-container,
+  section.client-container,
+  section .contact-container {
     max-width: var(--max-2xl);
   }
 
@@ -935,15 +1089,31 @@ section .review-hero .review-container .review-cards-wrapper .review-cards-conta
 
   /* ---------- Galery Section Start ------------ */
 
-  section .galery-container h4 {
+
+  section .galery-hero .galery-container h4 {
     font-size: 2.5rem;
   }
 
-  section .galery-container p {
+  section .galery-hero .galery-container p {
     max-width: var(--max-xl);
   }
 
   /* ---------- Galery Section End ------------ */
+
+
+
+  /* ---------  Client Section Start ---------*/
+  section .client-container {
+    max-width: var(--max-2xl);
+  }
+
+  section .client-container a img {
+    width: 13rem;
+  }
+
+
+
+  /* ---------  Client Section End ---------*/
 
 
 
@@ -983,4 +1153,34 @@ section .review-hero .review-container .review-cards-wrapper .review-cards-conta
   /* ------------ Reviews Section End ------------ */
 
 
+
+
+
+  /* ------------ Contact Section Start ------------ */
+
+  section .contact-container .contact-container-left h5 {
+    font-size: 2rem;
+  }
+
+  section .contact-container .contact-container-left h4 {
+    font-size: 2.5rem;
+  }
+
+  section .contact-container form {
+    width: 50%;
+  }
+
+  section .contact-container form .contact-container-form .contact-form-name input,
+  section .contact-container form .contact-container-form .contact-form-email input,
+  section .contact-container form .contact-container-form .contact-form-message input,
+  section .contact-container form .contact-container-form .contact-form-btn button {
+    padding: .7rem 1.1rem;
+    font-size: 1.1rem;
+  }
+
+  section .contact-container form .contact-container-form .contact-form-btn button {
+    padding: .8rem 0;
+  }
+
+  /* ------------ Contact Section End ------------ */
 }

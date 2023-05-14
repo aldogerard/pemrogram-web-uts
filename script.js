@@ -122,7 +122,7 @@ const updateUISevices = (data) => {
   <div class="card-container-desc">
     <h6>${data.title}</h6>
     <p>${data.desc}</p>
-    <a href="#" class="btn">
+    <a href="#services" class="btn">
       Know More
     </a>
   </div>
