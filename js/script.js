@@ -82,30 +82,36 @@ const dataReview = [
 
 const getDataCardsChoose = () => {
   let cards = [];
+  let delay = 0;
   dataChoose.map((res) => {
-    cards += updateUIChoose(res);
+    cards += updateUIChoose(res, delay);
+    delay += 300;
   });
   chooseCardsWrapper.innerHTML = cards;
 };
 
 const getDataCardsServices = () => {
   let cards = [];
+  let delay = 0;
   dataServices.map((res) => {
-    cards += updateUISevices(res);
+    cards += updateUISevices(res, delay);
+    delay += 300;
   });
   servicesCardsWrapper.innerHTML = cards;
 };
 
 const getDataCardsReview = () => {
   let cards = [];
+  let delay = 0;
   dataReview.map((res, i) => {
-    cards += updateUIReview(res, i);
+    cards += updateUIReview(res, i, delay);
+    delay += 300;
   });
   reviewCardsWrapper.innerHTML = cards;
 };
 
-const updateUIChoose = (data) => {
-  return `<div class="card-container">
+const updateUIChoose = (data, delay) => {
+  return `<div class="card-container" data-aos="fade-up" data-aos-delay=${delay}>
   <div class="card-img">
     <img src=${data.image} alt="image">
   </div>
@@ -114,8 +120,8 @@ const updateUIChoose = (data) => {
 </div>`;
 };
 
-const updateUISevices = (data) => {
-  return `<div class="card-container">
+const updateUISevices = (data, delay) => {
+  return `<div class="card-container" data-aos="fade-left" data-aos-delay=${delay}>
   <div class="card-img">
     <img src=${data.image} alt="services">
   </div>
@@ -129,8 +135,8 @@ const updateUISevices = (data) => {
 </div>`;
 };
 
-const updateUIReview = (data, i) => {
-  return `<div class="review-cards-container">
+const updateUIReview = (data, i, delay) => {
+  return `<div class="review-cards-container" data-aos="zoom-in" data-aos-delay=${delay}>
   <div class="card-comment">
     <div class="card-quote">
     </div>

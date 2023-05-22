@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="./assets/TIRTA.png" type="image/x-icon">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/mobile-style.css">
@@ -57,7 +58,7 @@
   <!-- ------------ About Section Start -------------- -->
   <section class="about-section" id="about">
     <div class="about-container">
-      <div class="about-container-left">
+      <div class="about-container-left" data-aos="fade-right">
         <h4>WELCOME TO OUR COMPANY</h4>
         <h5>Lorem dolor sit amet consectetur</h5>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, porro ullam possimus molestiae eligendi eos,
@@ -69,7 +70,7 @@
           Contact Us
         </a>
       </div>
-      <div class="about-container-right">
+      <div class="about-container-right" data-aos="fade-left">
         <div class="img-container-1">
           <div class="about-img-1"></div>
         </div>
@@ -85,7 +86,8 @@
   <section class="choose-section">
     <div class="choose-container">
       <h4>WHY CHOOSE US?</h4>
-      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem porro nulla dignissimos ratione maiores
+      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem porro nulla
+        dignissimos ratione maiores
         dolor! Itaque harum suscipit nihil eaque obcaecati officia iste non.</P>
       <div class="choose-cards-wrapper">
       </div>
@@ -98,7 +100,8 @@
   <section class="service-section" id="services">
     <div class="services-container">
       <h4>OUR SERVICES</h4>
-      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magnam, suscipit sapiente porro optio quos
+      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magnam, suscipit sapiente
+        porro optio quos
         consequuntur facilis Nobis magnam ?</P>
       <div class="services-cards-wrapper"></div>
     </div>
@@ -112,9 +115,10 @@
     <div class="galery-hero">
       <div class="galery-container">
         <h4>MADE WITH LOVE</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt, assumenda, maxime enim labore
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt, assumenda,
+          maxime enim labore
           minus ab totam nisi perferendis nostrum minima, veritatis.</P>
-        <ul class="galery-container-option">
+        <ul class="galery-container-option" data-aos="fade-left">
           <li>
             <a href="#">Show All</a>
           </li>
@@ -128,7 +132,7 @@
             <a href="#">Plumbing</a>
           </li>
         </ul>
-        <div class="galery-container-img">
+        <div class="galery-container-img" data-aos="fade-up">
           <div class="galery-container-img1"></div>
           <div class="galery-container-img2"></div>
           <div class="galery-container-img3"></div>
@@ -142,7 +146,7 @@
 
   <!-------------- Client Section Start -------------->
   <section class="client-section">
-    <div class="client-container">
+    <div class="client-container" data-aos="fade-left">
       <a href="">
         <img src="./assets/clients/komatsu.svg" alt="komatsu">
       </a>
@@ -168,7 +172,8 @@
     <div class="review-hero">
       <div class="review-container">
         <h4>CUSTORMER REVIEWS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laudantium? Officia cumque ut eius illo
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laudantium? Officia
+          cumque ut eius illo
           ipsum, voluptates quisquam sed rerum.</p>
         <div class="review-cards-wrapper"></div>
       </div>
@@ -180,12 +185,12 @@
   <!-------------- Contact Section Start --------------->
   <section class="contact-section" id="contact">
     <div class="contact-container">
-      <div class="contact-container-left">
+      <div class="contact-container-left" data-aos="fade-left">
         <h5>DO YOU HAVE ANY QUESTIONS?</h5>
         <h4>FEEL FREE TO CONTACT US!</h4>
       </div>
       <form>
-        <div class="contact-container-form">
+        <div class="contact-container-form" data-aos="fade-right">
           <div class="contact-form-name">
             <input type="text" placeholder="Name" />
           </div>
@@ -276,8 +281,12 @@
   <!-------------- Footer Section End ---------------->
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>

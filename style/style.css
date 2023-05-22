@@ -796,9 +796,9 @@ section .review-hero .review-container .review-cards-wrapper .review-cards-conta
   -moz-transform: scale(1.03) translateY(0%);
   -ms-transform: scale(1.03) translateY(0%);
   -o-transform: scale(1.03) translateY(0%);
-} */
+}
 
-/* section .review-hero .review-container .review-cards-wrapper .review-cards-container:nth-child(2) .card-quote {
+section .review-hero .review-container .review-cards-wrapper .review-cards-container:nth-child(2) .card-quote {
   background-image: url("../assets/quoteBL.png");
 } */
 
