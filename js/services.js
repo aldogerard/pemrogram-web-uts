@@ -38,7 +38,7 @@ const getDataCardsServices = () => {
   let delay = 0;
   dataServices.map((res) => {
     cards += updateUISevices(res, delay);
-    delay += 200;
+    delay += 100;
   });
   servicesCardsWrapper.innerHTML = cards;
 };

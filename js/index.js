@@ -50,7 +50,7 @@ const getDataCardsChoose = () => {
   let delay = 0;
   dataChoose.map((res) => {
     cards += updateUIChoose(res, delay);
-    delay += 300;
+    delay += 100;
   });
   chooseCardsWrapper.innerHTML = cards;
 };
@@ -60,7 +60,7 @@ const getDataCardsReview = () => {
   let delay = 0;
   dataReview.map((res, i) => {
     cards += updateUIReview(res, i, delay);
-    delay += 300;
+    delay += 100;
   });
   reviewCardsWrapper.innerHTML = cards;
 };
