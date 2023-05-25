@@ -251,23 +251,24 @@
   }
 
   .slides-container img {
-    width: 90%;
+    width: 100%;
     height: 500px;
     object-fit: contain;
   }
 
-  .slides-container span {
+  .slides-container i {
     position: absolute;
     cursor: pointer;
+  }
+
+  .slides-container i.before {
+    left: 10px;
     font-size: 1.5rem;
   }
 
-  .slides-container span.before {
-    left: 0;
-  }
-
-  .slides-container span.next {
-    right: 0;
+  .slides-container i.next {
+    right: 10px;
+    font-size: 1.5rem;
   }
 
   /* ---------  Galery Section End ---------*/
