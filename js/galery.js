@@ -23,11 +23,13 @@ const slideClose = document.querySelector(".slides-container .close");
 let currentIndex = 0;
 
 galery.forEach((res, i) => {
-  res.addEventListener("click", () => {
-    slideContainer.classList.add("showSlide");
-    currentIndex = i - 1;
-    showImage(currentIndex);
-  });
+  if (i > 0) {
+    res.addEventListener("click", () => {
+      slideContainer.classList.add("showSlide");
+      currentIndex = i - 1;
+      showImage(currentIndex);
+    });
+  }
 });
 
 slideClose.addEventListener("click", () => {
@@ -56,5 +58,3 @@ const showImage = (index) => {
 
   slideImage[currentIndex].style.display = "block";
 };
-
-showImage(currentIndex);
