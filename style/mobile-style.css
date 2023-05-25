@@ -246,7 +246,39 @@
     grid-area: 4 / 2 / 5 / 3;
   }
 
+  .video video {
+    width: 95%;
+  }
+
+  .slides-container img {
+    width: 90%;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  .slides-container span {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .slides-container span.before {
+    left: 0;
+  }
+
+  .slides-container span.next {
+    right: 0;
+  }
+
   /* ---------  Galery Section End ---------*/
+
+  /* ------------ Map Section Start ------------ */
+  section .map-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* ------------ Map Section End ------------ */
 
 
 
