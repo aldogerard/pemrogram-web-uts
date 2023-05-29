@@ -19,17 +19,12 @@ const dataServices = [
   {
     title: "MECHANICAL",
     desc: "Mechanical engineering encompasses the design, analysis, and maintenance of mechanical systems. It involves innovation, problem-solving, and applying scientific principles to create efficient and reliable machines and structures.",
-    image: "./assets/2.jpg",
-  },
-  {
-    title: "ENVIRONMENTAL",
-    desc: "Environmental conservation promotes sustainability and protects ecosystems. Renewable energy, waste reduction, conservation practices, and awareness contribute to a greener future for generations to come.",
-    image: "./assets/3.jpg",
+    image: "./assets/5.jpg",
   },
   {
     title: "ELECTRICAL",
     desc: "Environmental preservation is crucial for a sustainable future. Conservation, renewable energy, recycling, and responsible practices help protect ecosystems and mitigate climate change. Collective efforts ensure a greener planet.",
-    image: "./assets/4.jpg",
+    image: "./assets/6.jpg",
   },
 ];
 
@@ -51,7 +46,7 @@ const updateUISevices = (data, delay) => {
   <div class="card-container-desc">
     <h6>${data.title}</h6>
     <p>${data.desc}</p>
-    <a href="#services" class="btn">
+    <a href="contact.html" class="btn">
       Know More
     </a>
   </div>
