@@ -1070,9 +1070,9 @@ section .contact-container form .contact-container-form .contact-form-btn button
 /* ------------ Map Section Start ------------ */
 section.map-section {
   width: 100%;
-  background-image: url(../assets/galery-hero.jpg);
+  background-image: url(../assets/footer.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
 }
 
 section .map-hero {
