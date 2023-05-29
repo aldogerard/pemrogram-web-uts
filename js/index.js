@@ -4,22 +4,22 @@ const reviewCardsWrapper = document.querySelector(".review-cards-wrapper ");
 const dataChoose = [
   {
     title: "WE DELIVER QUALITY",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recu, eaque. Fugit dolorem soluta repudiandae eos. consectetur",
+    desc: "We are proud to uphold our commitment to provide the best quality in every construction project we handle.",
     image: "./assets/shield.png",
   },
   {
     title: "ALWAYS ON TIME ",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recu, eaque. Fugit dolorem soluta repudiandae eos. consectetur",
+    desc: "We do careful planning, optimize work efficiency, and use a structured approach to ensure that our projects are completed on time.",
     image: "./assets/clock.png",
   },
   {
-    title: "WE ARE PASIONATE",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recu, eaque. Fugit dolorem soluta repudiandae eos. consectetur",
+    title: "WE ARE PASSIONATE",
+    desc: "We are driven by passion in everything we do. Our team is fueled by a deep passion for the construction industry and a genuine love for what we do.",
     image: "./assets/passionate.png",
   },
   {
     title: "PROFESSIONAL SERVICES",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recu, eaque. Fugit dolorem soluta repudiandae eos. consectetur",
+    desc: "We are committed to providing professional services of the highest standards. Professionalism is ingrained in every aspect of our operations.",
     image: "./assets/professional.png",
   },
 ];
@@ -27,19 +27,19 @@ const dataChoose = [
 const dataReview = [
   {
     name: "John Smith",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aliquam ipsum! Dicta ea impedit amet eius ullam libero unde non rem similique reprehenderit quo, aliquid voluptatibus fuga.",
+    desc: "I am very impressed with the services, they carry out our projects with high professionalism and the results are truly outstanding. They listened well to our needs and provided the right solutions.",
     image: "./assets/man.jpg",
     quote: "./assets/quote.png",
   },
   {
     name: "Lebron James",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aliquam ipsum! Dicta ea impedit amet eius ullam libero unde non rem similique reprehenderit quo, aliquid voluptatibus fuga.",
+    desc: "Tirta company is our trusted partner in our renovation projects. They are very responsive and always provide clear updates on the progress of the project, The work they do is of very high quality",
     image: "./assets/man.jpg",
     quote: "./assets/quote.png",
   },
   {
     name: "Eleanor Quinn",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aliquam ipsum! Dicta ea impedit amet eius ullam libero unde non rem similique reprehenderit quo, aliquid voluptatibus fuga.",
+    desc: "I am very satisfied with the services provided by the Constructor Company. They have a highly skilled and experienced team. They were very friendly, listened to our needs and provided valuable suggestions.",
     image: "./assets/man.jpg",
     quote: "./assets/quote.png",
   },

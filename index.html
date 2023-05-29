@@ -44,9 +44,8 @@
         <h3>We Are Certified Engineers</h3>
         <h1>CONSTRUCTION SERVICES</h1>
         <h1 class="second-title">CREATIVE & PROFESIONAL</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusamus at deserunt dicta ullam quasi
-          officiis nobis, obcaecati quibusdam voluptate rem voluptas ratione laudantium libero aspernatur eius vero
-          soluta quidem ducimus.</p>
+        <p>We Are A Trusted Partner For Your Construction Project, Presenting the Best Solution through Construction
+          Experience and Commitment</p>
         <a href="services.html" class="btn">
           View Project
         </a>
@@ -60,11 +59,12 @@
       <div class="about-container-left" data-aos="fade-right">
         <h4>WELCOME TO OUR COMPANY</h4>
         <h5>Lorem dolor sit amet consectetur</h5>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, porro ullam possimus molestiae eligendi eos,
-          reiciendis nostrum velit inventore a pariatur nam corporis obcaecati iste exercitationem recusandae enim
-          dignissimos quo?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nesciunt debitis magni molestias facilis, quo
-          soluta non nisi delectus similique ullam maiores esse aspernatur eius obcaecati vitae in velit quasi!</p>
+        <p>Welcome to the Constructor Company, your trusted partner in the construction industry. We are an experienced
+          construction company dedicated to providing our clients with high quality construction solutions.</p>
+        <p>We have a professional team of engineers, architects, technicians and other skilled workers who work together
+          to deliver innovative and quality construction projects. With extensive experience in various types of
+          projects, we are ready to assist you in planning, designing and executing the right construction project
+          according to your needs and budget.</p>
         <a href="contact.html" class="btn">
           Contact Us
         </a>
@@ -85,9 +85,8 @@
   <section class="choose-section">
     <div class="choose-container">
       <h4>WHY CHOOSE US?</h4>
-      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rem porro nulla
-        dignissimos ratione maiores
-        dolor! Itaque harum suscipit nihil eaque obcaecati officia iste non.</P>
+      <P>At our company, we adhere to the principles of honesty, integrity, quality and customer satisfaction. We always
+        strive to provide the best results and exceed our clients' expectations.</P>
       <div class="choose-cards-wrapper">
       </div>
     </div>
@@ -160,9 +159,8 @@
     <div class="review-hero">
       <div class="review-container">
         <h4>CUSTORMER REVIEWS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laudantium? Officia
-          cumque ut eius illo
-          ipsum, voluptates quisquam sed rerum.</p>
+        <p>We value and appreciate customer feedback. Our customers' reviews serve as a testament to the quality of our
+          services and the satisfaction they have experienced working with us.</p>
         <div class="review-cards-wrapper"></div>
       </div>
     </div>
@@ -177,19 +175,19 @@
         <h5>DO YOU HAVE ANY QUESTIONS?</h5>
         <h4>FEEL FREE TO CONTACT US!</h4>
       </div>
-      <form>
+      <form id="contact-form">
         <div class="contact-container-form" data-aos="fade-right">
           <div class="contact-form-name">
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" id="" required />
           </div>
           <div class="contact-form-email">
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" required />
           </div>
           <div class="contact-form-message">
-            <input type="text" placeholder="message" />
+            <input type="text" placeholder="message" required />
           </div>
           <div class="contact-form-btn">
-            <button type="button">Send</button>
+            <button type="submit">Send</button>
           </div>
         </div>
       </form>
@@ -205,15 +203,15 @@
       <div class="footer-container-top">
         <div class="footer-container-1">
           <h4>Tirta Wijaya</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, architecto illo cupiditate quibusdam vel
-            quasi aperiam eveniet ipsum nulla unde iure.</p>
+          <p>We Are A Trusted Partner For Your Construction Project, Presenting the Best Solution through Construction
+            Experience and Commitment</p>
         </div>
         <div class="footer-container-2">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#services">Construction</a></li>
-            <li><a href="#services">Renovation</a></li>
-            <li><a href="#services">Architecture</a></li>
+            <li><a href="services.html">Construction</a></li>
+            <li><a href="services.html">Renovation</a></li>
+            <li><a href="services.html">Architecture</a></li>
           </ul>
         </div>
         <div class="footer-container-3">
@@ -280,6 +278,18 @@
   <!-------------- ScrollToTop Section End ---------------->
 
 
+
+  <script>
+    const contactForm = document.forms["contact-form"];
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        contactForm.reset();
+        alert("Your Questions has been sent 👍");
+      }, 300);
+    });
+  </script>
 
 
 
