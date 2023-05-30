@@ -690,7 +690,7 @@ section .galery-hero .galery-container .galery-container-img .galery-container-i
 
 .video {
   position: fixed;
-  z-index: 99999;
+  z-index: 99999999999;
   top: 0;
   left: 0;
   right: 0;
@@ -725,7 +725,7 @@ section .galery-hero .galery-container .galery-container-img .galery-container-i
 .slides-container {
   background-color: rebeccapurple;
   position: fixed;
-  z-index: 99999;
+  z-index: 99999999999;
   top: 0;
   left: 0;
   right: 0;

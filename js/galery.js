@@ -10,6 +10,7 @@ close.addEventListener("click", () => {
 
 thumbnail.addEventListener("click", () => {
   video.classList.add("show");
+  videoPlayer.play();
 });
 
 const galery = document.querySelectorAll(".galery-container-img div");
