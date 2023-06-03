@@ -25,7 +25,7 @@
 
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: var(--dark);
 }
 
@@ -436,7 +436,16 @@ section .choose-container .choose-cards-wrapper .card-container p {
 
 section.service-section {
   width: 100%;
-  background-color: #202020;
+  background-image: url(../assets/footer.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+section .services-hero {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(25, 25, 25, .6), var(--dark));
 }
 
 section .services-container {
@@ -447,11 +456,12 @@ section .services-container {
   flex-direction: column;
   align-items: center;
   padding: 7rem 1rem;
+  padding-bottom: 5rem;
 }
 
 section .services-container h4 {
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--white);
   margin-bottom: 1.5rem;
 }
 
@@ -539,6 +549,92 @@ section .services-container .services-cards-wrapper .card-container .card-contai
 
 
 /* ---------  Services Section End ---------*/
+
+
+
+
+
+
+/* ---------  Employee Section Start ---------*/
+
+section.employee-section {
+  width: 100%;
+  background-color: var(--dark);
+}
+
+
+
+section .employee-container {
+  max-width: var(--max-xl);
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+section .employee-container h4 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+section .employee-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  max-width: var(--max-lg);
+}
+
+section .employee-container .employee-table-wrapper {
+  width: 100%;
+  margin-top: 3rem;
+  overflow-x: auto;
+}
+
+section .employee-container .employee-table-wrapper table {
+  background-color: #252525;
+  box-shadow: 0px 0px 1px var(--white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+}
+
+section .employee-container .employee-table-wrapper table thead tr th {
+  padding: 1rem 3rem;
+  color: #c0c0c0;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+}
+
+section .employee-container .employee-table-wrapper table tbody tr td {
+  padding: .8rem 3rem;
+  font-size: .8rem;
+  color: #dad8d8;
+  font-weight: 600;
+}
+
+section .employee-container .employee-table-wrapper table tbody tr td img {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/* ---------  Employee Section  ---------*/
+
+
+
+
+
+
+
+
+
 
 
 
