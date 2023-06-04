@@ -47,26 +47,22 @@ const dataReview = [
 
 const getDataCardsChoose = () => {
   let cards = [];
-  let delay = 0;
   dataChoose.map((res) => {
-    cards += updateUIChoose(res, delay);
-    delay += 100;
+    cards += updateUIChoose(res);
   });
   chooseCardsWrapper.innerHTML = cards;
 };
 
 const getDataCardsReview = () => {
   let cards = [];
-  let delay = 0;
   dataReview.map((res, i) => {
-    cards += updateUIReview(res, i, delay);
-    delay += 100;
+    cards += updateUIReview(res, i);
   });
   reviewCardsWrapper.innerHTML = cards;
 };
 
-const updateUIChoose = (data, delay) => {
-  return `<div class="card-container" data-aos="fade-up" data-aos-delay=${delay}>
+const updateUIChoose = (data) => {
+  return `<div class="card-container">
   <div class="card-img">
     <img src=${data.image} alt="image">
   </div>
@@ -75,8 +71,8 @@ const updateUIChoose = (data, delay) => {
 </div>`;
 };
 
-const updateUIReview = (data, i, delay) => {
-  return `<div class="review-cards-container" data-aos="zoom-in" data-aos-delay=${delay}>
+const updateUIReview = (data, i) => {
+  return `<div class="review-cards-container">
   <div class="card-comment">
     <div class="card-quote">
     </div>

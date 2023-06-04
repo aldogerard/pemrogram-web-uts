@@ -63,10 +63,8 @@ const dataEmployee = [
 
 const getDataCardsServices = () => {
   let cards = [];
-  let delay = 0;
   dataServices.map((res) => {
-    cards += updateUISevices(res, delay);
-    delay += 100;
+    cards += updateUISevices(res);
   });
   servicesCardsWrapper.innerHTML = cards;
 };
@@ -79,8 +77,8 @@ const getDataTableEmployee = () => {
   employeeTableRow.innerHTML = table;
 };
 
-const updateUISevices = (data, delay) => {
-  return `<div class="card-container" data-aos="fade-up" data-aos-delay=${delay}>
+const updateUISevices = (data) => {
+  return `<div class="card-container">
   <div class="card-img">
     <img src=${data.image} alt="services">
   </div>
