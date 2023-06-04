@@ -1,5 +1,7 @@
 const servicesCardsWrapper = document.querySelector(".services-cards-wrapper ");
 
+const employeeTableRow = document.querySelector("tbody.employee-table-row");
+
 const dataServices = [
   {
     title: "CONSTRUCTION MANAGEMENT",
@@ -28,6 +30,30 @@ const dataServices = [
   },
 ];
 
+const dataEmployee = [
+  {
+    image: "./assets/man.png",
+    name: "Eric Dyer",
+    email: "ericdyer@gmail.com",
+    mobile: "+62 315 236 554",
+    skill: "Electrical",
+  },
+  {
+    image: "./assets/woman.png",
+    name: "Vanessa Paradi",
+    email: "vparadi@gmail.com",
+    mobile: "+62 216 981 301",
+    skill: "Architecture",
+  },
+  {
+    image: "./assets/man2.png",
+    name: "Michael Jordan",
+    email: "michjordan@gmail.com",
+    mobile: "+62 198 234 345",
+    skill: "mechanical",
+  },
+];
+
 const getDataCardsServices = () => {
   let cards = [];
   let delay = 0;
@@ -36,6 +62,14 @@ const getDataCardsServices = () => {
     delay += 100;
   });
   servicesCardsWrapper.innerHTML = cards;
+};
+
+const getDataTableEmployee = () => {
+  let table = [];
+  dataEmployee.map((res) => {
+    table += updateUIEmployee(res);
+  });
+  employeeTableRow.innerHTML = table;
 };
 
 const updateUISevices = (data, delay) => {
@@ -53,4 +87,15 @@ const updateUISevices = (data, delay) => {
 </div>`;
 };
 
+const updateUIEmployee = (res) => {
+  return `<tr>
+            <td><img src=${res.image} alt="profile-pict"></td>
+            <td>${res.name}</td>
+            <td>${res.email}</td>
+            <td>${res.mobile}</td>
+            <td>${res.skill}</td>
+        </tr>`;
+};
+
 getDataCardsServices();
+getDataTableEmployee();

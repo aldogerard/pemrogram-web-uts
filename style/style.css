@@ -595,7 +595,6 @@ section .employee-container .employee-table-wrapper {
 
 section .employee-container .employee-table-wrapper table {
   background-color: #252525;
-  box-shadow: 0px 0px 1px var(--white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -605,7 +604,7 @@ section .employee-container .employee-table-wrapper table {
 }
 
 section .employee-container .employee-table-wrapper table thead tr th {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   color: #c0c0c0;
   font-weight: 500;
   font-size: 1rem;
@@ -613,10 +612,11 @@ section .employee-container .employee-table-wrapper table thead tr th {
 }
 
 section .employee-container .employee-table-wrapper table tbody tr td {
-  padding: .8rem 3rem;
+  padding: .8rem 2rem;
   font-size: .8rem;
   color: #dad8d8;
   font-weight: 600;
+  white-space: nowrap
 }
 
 section .employee-container .employee-table-wrapper table tbody tr td img {
@@ -1472,7 +1472,8 @@ div.show-scroll-top {
   section .review-hero .review-container,
   section.client-container,
   section .contact-container,
-  footer .footer-container {
+  footer .footer-container,
+  section .employee-container {
     max-width: var(--max-2xl);
   }
 
@@ -1582,6 +1583,38 @@ div.show-scroll-top {
   }
 
   /* --------- Services Section End ---------- */
+
+
+
+
+
+  /* --------- Employee Section Start ----------- */
+  section .employee-container h4 {
+    font-size: 2.5rem;
+  }
+
+  section .employee-container p {
+    font-size: 1.2rem;
+    max-width: var(--max-xl);
+  }
+
+  section .employee-container .employee-table-wrapper table thead tr th {
+    font-size: 1.2rem;
+  }
+
+  section .employee-container .employee-table-wrapper table tbody tr td {
+    font-size: 1rem;
+  }
+
+  section .employee-container .employee-table-wrapper table tbody tr td img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* --------- Employee Section End ----------- */
+
+
+
 
 
 
