@@ -52,6 +52,13 @@ const dataEmployee = [
     mobile: "+62 198 234 345",
     skill: "mechanical",
   },
+  {
+    image: "./assets/woman.png",
+    name: "Ashley Williams",
+    email: "ashleywill12@gmail.com",
+    mobile: "+62 348 423 011",
+    skill: "Management",
+  },
 ];
 
 const getDataCardsServices = () => {
